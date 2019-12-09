@@ -75,13 +75,15 @@
                     <attribute name="Class-Path" value="jogl-all.jar gluegen-rt.jar gdal.jar"/>
                 </manifest>
                 <fileset dir="@{classdir}">
-                    <include name="gov/nasa/worldwind/**/*.class"/>
+                	<include name="cmu/symbolic/**/*.class"/>
+                	<include name="gov/nasa/worldwind/**/*.class"/>
                     <include name="com/zebraimaging/**/*.class"/>
                     <include name="org/codehaus/jackson/**/*.class" unless="${worldwind.exclude.jackson}"/>
                     <type type="file"/>
                 </fileset>
                 <fileset dir="@{srcdir}">
-                    <include name="gov/nasa/worldwind/**/*.java" if="${bundleJarFiles.debug}"/>
+                	<include name="cmu/symbolic/**/*.java" if="${bundleJarFiles.debug}"/>
+                	<include name="gov/nasa/worldwind/**/*.java" if="${bundleJarFiles.debug}"/>
                     <include name="gov/nasa/worldwind/util/**/*.properties"/>
                     <include name="com/zebraimaging/**/*.java" if="${bundleJarFiles.debug}"/>
                     <include name="org/codehaus/jackson/**/*.java" if="${bundleJarFiles.debug}"
