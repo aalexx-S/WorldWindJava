@@ -4,3 +4,4 @@ sourcepath=${user.home}/Projects/WorldWindJava/src
 symbolic.method=PolyArcTest.set_radius(sym#sym#sym#sym#sym#sym),PolyArcTest.set_azimuths(sym#sym#sym#sym#sym#sym#sym)
 search.multiple_errors=true
 symbolic.dp=z3
+symbolic.debug=on

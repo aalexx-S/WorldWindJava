@@ -4,3 +4,4 @@ sourcepath=${user.home}/Projects/WorldWindJava/src
 symbolic.method=BoxTest.set_widths(sym#sym#sym#sym#sym#sym#sym#sym),BoxTest.set_corner_azimuths(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym),BoxTest.set_enable_caps(sym#sym#sym#sym#sym#sym#sym),BoxTest.set_enable_start_cap(sym#sym#sym#sym#sym#sym#sym),BoxTest.set_enable_end_cap(sym#sym#sym#sym#sym#sym#sym),BoxTest.set_enable_center_line(sym#sym#sym#sym#sym#sym#sym)
 search.multiple_errors=true
 symbolic.dp=z3
+symbolic.debug=on
