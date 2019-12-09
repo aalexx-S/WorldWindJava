@@ -5,4 +5,5 @@ symbolic.method=PolyArcTest.create(sym#sym#sym#sym#sym),PolyArcTest.setRadius(sy
 search.multiple_errors=true
 symbolic.dp=z3
 symbolic.debug=true
+symbolic.arrays=true
 listener=gov.nasa.jpf.symbc.SymbolicListener
