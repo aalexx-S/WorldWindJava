@@ -5,3 +5,4 @@ symbolic.method=AngleTest.fromDegrees(sym),AngleTest.fromRadians(sym),AngleTest.
 search.multiple_errors=true
 symbolic.dp=z3
 symbolic.debug=true
+listener=gov.nasa.jpf.symbc.SymbolicListener
