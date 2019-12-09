@@ -37,7 +37,7 @@ public class AngleTest {
     }
 	
 	public static void main(String[] args) {
-		// Disable graphical environment
+		// disable GUI
 		System.setProperty("java.awt.headless", "true");
 		
 		from_degrees(1.0);

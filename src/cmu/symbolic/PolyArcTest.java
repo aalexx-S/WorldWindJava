@@ -29,7 +29,9 @@ public class PolyArcTest {
 	}
 	
 	public static void main(String[] args) {
+		// disable GUI
 		System.setProperty("java.awt.headless", "true");
+
 		set_radius(1.0, 2.0, 1.0, 2.0, 1.0, 2.0);
 		set_azimuths(1.0, 2.0, 1.0, 2.0, 1.0, 2.0, 1.0);
 	}

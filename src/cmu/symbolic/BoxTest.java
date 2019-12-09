@@ -54,7 +54,7 @@ public class BoxTest {
 	}
 	
 	public static void main(String[] args) {
-		// Disable graphical environment
+		// disable GUI
 		System.setProperty("java.awt.headless", "true");
 		
 		set_widths(1.0, 2.0, 1.0, 2.0, 1.0, 2.0, 1.0, 1.0);
