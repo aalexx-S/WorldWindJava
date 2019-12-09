@@ -1,6 +1,7 @@
 package cmu.symbolic;
 
 import gov.nasa.worldwind.geom.LatLon;
+import gov.nasa.worldwind.geom.Position;
 import gov.nasa.worldwind.render.airspaces.PolyArc;
 import gov.nasa.worldwind.geom.Angle;
 import java.util.Arrays;
@@ -31,6 +32,13 @@ public class PolyArcTest {
         polyarc.setAzimuths(leftAzimuth, rightAzimuth);
     }
     
+    public static void move(double lat, double lon, double radius, double leftAzimuthDeg, double rightAzimuthDeg, double newLat, double newLon, double newElev) {
+        PolyArc polyArc = create(lat, lon, radius, leftAzimuthDeg, rightAzimuthDeg);
+        Position position = Position.fromDegrees(newLat, newLon, newElev);
+        
+        polyArc.move(position);
+    }
+    
     public static void main(String[] args) {
         // disable GUI
         System.setProperty("java.awt.headless", "true");
@@ -38,6 +46,7 @@ public class PolyArcTest {
         create(1.0, 1.0, 1.0, 1.0, 1.0);
         setRadius(1.0, 1.0, 1.0, 1.0, 1.0, 1.0);
         setAzimuths(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0);
+        move(0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8);
     }
 
 }

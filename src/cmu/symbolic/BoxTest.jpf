@@ -1,7 +1,7 @@
 target=cmu.symbolic.BoxTest
 classpath=${user.home}/Projects/WorldWindJava/classes
 #sourcepath=${user.home}/Projects/WorldWindJava/src
-symbolic.method=BoxTest.create(sym#sym#sym#sym#sym#sym),BoxTest.setWidths(sym#sym#sym#sym#sym#sym#sym#sym),BoxTest.setCornerAzimuths(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableCaps(sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableStartCap(sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableEndCap(sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableCenterLine(sym#sym#sym#sym#sym#sym#sym)
+symbolic.method=BoxTest.create(sym#sym#sym#sym#sym#sym),BoxTest.setWidths(sym#sym#sym#sym#sym#sym#sym#sym),BoxTest.setCornerAzimuths(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableCaps(sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableStartCap(sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableEndCap(sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableCenterLine(sym#sym#sym#sym#sym#sym#sym),BoxTest.move(sym#sym#sym#sym#sym#sym#sym#sym#sym)
 search.multiple_errors=true
 symbolic.dp=z3
 symbolic.debug=true

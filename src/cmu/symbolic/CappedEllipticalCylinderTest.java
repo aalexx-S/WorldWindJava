@@ -2,9 +2,12 @@ package cmu.symbolic;
 
 import gov.nasa.worldwind.geom.Angle;
 import gov.nasa.worldwind.geom.LatLon;
-import gov.nasa.worldwind.render.airspaces.*;
+import gov.nasa.worldwind.render.airspaces.CappedEllipticalCylinder;
+import gov.nasa.worldwind.render.airspaces.BasicAirspaceAttributes;
+import gov.nasa.worldwind.geom.Position;
 
 public class CappedEllipticalCylinderTest {
+ 
     public static CappedEllipticalCylinder create(double lat, double lon, double radius, double radius2, double degree){
         LatLon latLon = LatLon.fromDegrees(lat, lon);
         Angle angle = Angle.fromDegrees(degree);
@@ -33,6 +36,13 @@ public class CappedEllipticalCylinderTest {
         
         c.setHeading(a2);
     }
+    
+    public static void move(double lat, double lon, double radius, double radius2, double degree, double newLat, double newLon, double newElev) {
+        CappedEllipticalCylinder c = create(lat, lon, radius, radius2, degree);
+        Position pos = Position.fromDegrees(newLat, newLon, newElev);
+        
+        c.move(pos);
+    }
 
 
     public static void main(String[] argv) {
@@ -41,5 +51,6 @@ public class CappedEllipticalCylinderTest {
         setCenter(0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7);
         setRadii(0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7);
         setHeading(0.1, 0.2, 0.3, 0.4, 0.5, 0.6);
+        move(0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8);
     }
 }

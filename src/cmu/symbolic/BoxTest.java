@@ -1,6 +1,7 @@
 package cmu.symbolic;
 
 import gov.nasa.worldwind.geom.LatLon;
+import gov.nasa.worldwind.geom.Position;
 import gov.nasa.worldwind.render.airspaces.Box;
 import gov.nasa.worldwind.geom.Angle;
 
@@ -32,25 +33,36 @@ public class BoxTest {
     public static void setEnableCaps(double startLat, double startLon, double endLat, double endLon, 
             double leftWidth, double rightWidth, boolean enableCaps) {
         Box box = create(startLat, startLon, endLat, endLon, leftWidth, rightWidth);
+        
         box.setEnableCaps(enableCaps);
     }
     
     public static void setEnableStartCap(double startLat, double startLon, double endLat, double endLon, 
             double leftWidth, double rightWidth, boolean enableCap) {
         Box box = create(startLat, startLon, endLat, endLon, leftWidth, rightWidth);
+        
         box.setEnableStartCap(enableCap);
     }
     
     public static void setEnableEndCap(double startLat, double startLon, double endLat, double endLon, 
             double leftWidth, double rightWidth, boolean enableCap) {
         Box box = create(startLat, startLon, endLat, endLon, leftWidth, rightWidth);
+        
         box.setEnableEndCap(enableCap);
     }
 
     public static void setEnableCenterLine(double startLat, double startLon, double endLat, double endLon, 
             double leftWidth, double rightWidth, boolean enableCenterLine) {
         Box box = create(startLat, startLon, endLat, endLon, leftWidth, rightWidth);
+        
         box.setEnableEndCap(enableCenterLine);
+    }
+    
+    public static void move(double startLat, double startLon, double endLat, double endLon, double leftWidth, double rightWidth, double newLat, double newLon, double newElev) {
+        Box box = create(startLat, startLon, endLat, endLon, leftWidth, rightWidth);
+        Position position = Position.fromDegrees(newLat, newLon, newElev);
+        
+        box.move(position);
     }
     
     public static void main(String[] args) {
@@ -63,5 +75,6 @@ public class BoxTest {
         setEnableStartCap(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, true);
         setEnableEndCap(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, true);
         setEnableCenterLine(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, true);
+        move(0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9);
     }
 }
