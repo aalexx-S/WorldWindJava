@@ -1,0 +1,17 @@
+
+target=cmu.symbolic.CappedCylinderTest
+
+classpath=${user.home}/Projects/WorldWindJava/classes
+sourcepath=${user.home}/Projects/WorldWindJava/src
+
+pref=CappedCylinderTest
+
+symbolic.method = ${pref}.setCenter(sym#sym#sym#sym#sym),${pref}.setRadii(sym#sym#sym#sym#sym),${pref}.setRadius(sym#sym#sym#sym)
+
+#symbolic.debug=true
+
+listener = gov.nasa.jpf.symbc.SymbolicListener
+
+search.multiple_errors=true
+symbolic.dp=z3
+
