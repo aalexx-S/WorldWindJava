@@ -6,7 +6,7 @@ import gov.nasa.worldwind.geom.Angle;
 
 public class BoxTest {
 	
-	private static Box create_box(double startLat, double startLon, double endLat, double endLon, double leftWidth, double rightWidth) {
+	public static Box create_box(double startLat, double startLon, double endLat, double endLon, double leftWidth, double rightWidth) {
 		LatLon startLoc = LatLon.fromDegrees(startLat, startLon);
 		LatLon endLoc = LatLon.fromDegrees(endLat, endLon);
 		return new Box(startLoc, endLoc, leftWidth, rightWidth);
