@@ -1,7 +1,7 @@
 target=cmu.symbolic.CappedCylinderTest
 classpath=${user.home}/Projects/WorldWindJava/classes
 sourcepath=${user.home}/Projects/WorldWindJava/src
-pref=CappedCylinderTest
+pref=cmu.symbolic.CappedCylinderTest
 symbolic.method=${pref}.setCenter(sym#sym#sym#sym#sym),${pref}.setRadii(sym#sym#sym#sym#sym),${pref}.setRadius(sym#sym#sym#sym),${pref}.setEnableCaps(sym#sym#sym#sym),${pref}.move(sym#sym#sym#sym#sym#sym)
 symbolic.debug=true
 search.multiple_errors=true

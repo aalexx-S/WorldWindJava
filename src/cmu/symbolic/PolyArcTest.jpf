@@ -1,7 +1,7 @@
 target=cmu.symbolic.PolyArcTest
-classpath=${user.home}/Projects/WorldWindJava/classes
+classpath=${user.home}/Projects/WorldWindJava/worldwind.jar
 sourcepath=${user.home}/Projects/WorldWindJava/src
-symbolic.method=PolyArcTest.create(sym#sym#sym#sym#sym),PolyArcTest.setRadius(sym#sym#sym#sym#sym#sym),PolyArcTest.setAzimuths(sym#sym#sym#sym#sym#sym#sym),PolyArcTest.move(sym#sym#sym#sym#sym#sym#sym#sym)
+symbolic.method=cmu.symbolic.PolyArcTest.create(sym#sym#sym#sym#sym),cmu.symbolic.PolyArcTest.setRadius(sym#sym#sym#sym#sym#sym),cmu.symbolic.PolyArcTest.setAzimuths(sym#sym#sym#sym#sym#sym#sym),cmu.symbolic.PolyArcTest.move(sym#sym#sym#sym#sym#sym#sym#sym)
 search.multiple_errors=true
 symbolic.dp=z3
 symbolic.debug=true
