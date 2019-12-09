@@ -21,11 +21,8 @@ How to install the project to run the symbolic execution tests.
 * Add the following code in `~/.jpf/site.properties`
     
 ```
-# JPFCore location:
 jpf-core = ${user.home}/projects/jpf/jpf-core
 jpf-symbc = ${user.home}/projects/jpf/jpf-symbc
-
-# JPF Extensions:
 extensions = ${jpf-core},${jpf-symbc}
 ```
 
