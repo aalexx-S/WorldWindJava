@@ -1,7 +1,8 @@
 target=cmu.symbolic.BoxTest
 classpath=${user.home}/Projects/WorldWindJava/classes
-sourcepath=${user.home}/Projects/WorldWindJava/src
-symbolic.method=BoxTest.create_box(sym#sym#sym#sym#sym#sym),BoxTest.set_widths(sym#sym#sym#sym#sym#sym#sym#sym),BoxTest.set_corner_azimuths(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym),BoxTest.set_enable_caps(sym#sym#sym#sym#sym#sym#sym),BoxTest.set_enable_start_cap(sym#sym#sym#sym#sym#sym#sym),BoxTest.set_enable_end_cap(sym#sym#sym#sym#sym#sym#sym),BoxTest.set_enable_center_line(sym#sym#sym#sym#sym#sym#sym)
+#sourcepath=${user.home}/Projects/WorldWindJava/src
+symbolic.method=BoxTest.createBox(sym#sym#sym#sym#sym#sym),BoxTest.setWidths(sym#sym#sym#sym#sym#sym#sym#sym),BoxTest.setCornerAzimuths(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableCaps(sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableStartCap(sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableEndCap(sym#sym#sym#sym#sym#sym#sym),BoxTest.setEnableCenterLine(sym#sym#sym#sym#sym#sym#sym)
 search.multiple_errors=true
 symbolic.dp=z3
 symbolic.debug=true
+listener=gov.nasa.jpf.symbc.SymbolicListener

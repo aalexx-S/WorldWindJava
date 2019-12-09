@@ -4,35 +4,35 @@ import gov.nasa.worldwind.geom.Angle;
 
 public class AngleTest {
 	
-	public static void from_degrees(double degrees) {
+	public static void fromDegrees(double degrees) {
 		Angle.fromDegrees(degrees);
 	}
 	
-	public static void from_radians(double radians) {
+	public static void fromRadians(double radians) {
 		Angle.fromRadians(radians);
 	}
 	
-	public static void from_degrees_lat(double degrees_lat) {
+	public static void fromDegreesLat(double degrees_lat) {
 		Angle.fromDegreesLatitude(degrees_lat);
 	}
 	
-	public static void from_degrees_lon(double degrees_lon) {
+	public static void fromDegreesLon(double degrees_lon) {
 		Angle.fromDegreesLongitude(degrees_lon);
 	}
 	
-	public static void from_radians_lat(double radians_lat) {
+	public static void fromRadiansLat(double radians_lat) {
 		Angle.fromRadiansLatitude(radians_lat);
 	}
 	
-    public static void from_radians_lon(double radians_lon) {
+    public static void fromRadiansLon(double radians_lon) {
     	Angle.fromRadiansLongitude(radians_lon);
 	}
     
-    public static void from_xy(double x, double y) {
+    public static void fromXY(double x, double y) {
     	Angle.fromXY(x, y);
     }
     
-    public static void from_dms(int degrees, int minutes, int seconds) {
+    public static void fromDMS(int degrees, int minutes, int seconds) {
     	Angle.fromDMS(degrees, minutes, seconds);
     }
 	
@@ -40,13 +40,13 @@ public class AngleTest {
 		// disable GUI
 		System.setProperty("java.awt.headless", "true");
 		
-		from_degrees(1.0);
-		from_radians(1.0);
-		from_degrees_lat(1.0);
-		from_degrees_lon(1.0);
-		from_radians_lat(1.0);
-		from_radians_lon(1.0);
-		from_xy(1,1);
-		from_dms(1,1,1);
+		fromDegrees(1.0);
+		fromRadians(1.0);
+		fromDegreesLat(1.0);
+		fromDegreesLon(1.0);
+		fromRadiansLat(1.0);
+		fromRadiansLon(1.0);
+		fromXY(1,1);
+		fromDMS(1,1,1);
 	}
 }
