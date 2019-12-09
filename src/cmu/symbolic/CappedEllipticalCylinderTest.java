@@ -8,22 +8,16 @@ public class CappedEllipticalCylinderTest {
     public static CappedEllipticalCylinder create(double lat, double lon, double radius, double radius2, double degree){
         LatLon latLon = LatLon.fromDegrees(lat, lon);
         Angle angle = Angle.fromDegrees(degree);
-        CappedEllipticalCylinder capped = null;
-        try {
-            capped = new CappedEllipticalCylinder(latLon, radius, radius2, angle);
-        }
-        catch (Exception e) {
-            System.out.println(e);
-        }
+        CappedEllipticalCylinder capped = new CappedEllipticalCylinder(latLon, radius, radius2, angle);
+        
         capped.setHighlightAttributes(new BasicAirspaceAttributes());
-
         return capped;
     }
 
     public static void setCenter(double lat, double lon, double radius, double radius2, double degree, double lat2, double lon2) {
         CappedEllipticalCylinder c = create(lat, lon, radius, radius2, degree);
-
         LatLon l2 = LatLon.fromDegrees(lat2, lon2);
+        
         c.setCenter(l2);
     }
 
@@ -35,8 +29,8 @@ public class CappedEllipticalCylinderTest {
 
     public static void setHeading (double lat, double lon, double radius, double radius2, double degree, double degree2) {
         CappedEllipticalCylinder c = create(lat, lon, radius, radius2, degree);
-
         Angle a2 = Angle.fromDegrees(degree2);
+        
         c.setHeading(a2);
     }
 
