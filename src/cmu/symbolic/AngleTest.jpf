@@ -1,7 +1,7 @@
 target=cmu.symbolic.AngleTest
 classpath=${user.home}/Projects/WorldWindJava/classes;
 sourcepath=${user.home}/Projects/WorldWindJava/src
-symbolic.method=AngleTest.from_degrees(sym),AngleTest.from_radians(sym),AngleTest.from_degrees_lat(sym),AngleTest.from_degrees_lon(sym),AngleTest.from_radians_lat(sym),AngleTest.from_radians_lon(sym),AngleTest.from_xy(sym#sym),AngleTest.from_dms(sym#sym#sym)
+symbolic.method=AngleTest.create_polyarcAngleTest.from_degrees(sym),AngleTest.from_radians(sym),AngleTest.from_degrees_lat(sym),AngleTest.from_degrees_lon(sym),AngleTest.from_radians_lat(sym),AngleTest.from_radians_lon(sym),AngleTest.from_xy(sym#sym),AngleTest.from_dms(sym#sym#sym)
 search.multiple_errors=true
 symbolic.dp=z3
 symbolic.debug=on

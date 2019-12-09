@@ -57,11 +57,11 @@ public class BoxTest {
 		// disable GUI
 		System.setProperty("java.awt.headless", "true");
 		
-		set_widths(1.0, 2.0, 1.0, 2.0, 1.0, 2.0, 1.0, 1.0);
-		set_corner_azimuths(1.0, 2.0, 1.0, 2.0, 1.0, 2.0, 45, 45, 45, 45);
-		set_enable_caps(1.0, 2.0, 1.0, 2.0, 1.0, 2.0, true);
-		set_enable_start_cap(1.0, 2.0, 1.0, 2.0, 1.0, 2.0, true);
-		set_enable_end_cap(1.0, 2.0, 1.0, 2.0, 1.0, 2.0, true);
-		set_enable_center_line(1.0, 2.0, 1.0, 2.0, 1.0, 2.0, true);
+		set_widths(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0);
+		set_corner_azimuths(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0);
+		set_enable_caps(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, true);
+		set_enable_start_cap(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, true);
+		set_enable_end_cap(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, true);
+		set_enable_center_line(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, true);
 	}
 }

@@ -8,7 +8,7 @@ import java.util.List;
 
 public class PolyArcTest {
 	
-	private static PolyArc create_polyarc(double lat, double lon, double radius, double leftAzimuthDeg, double rightAzimuthDeg) {
+	public static PolyArc create_polyarc(double lat, double lon, double radius, double leftAzimuthDeg, double rightAzimuthDeg) {
 		LatLon location = LatLon.fromDegrees(lat, lon);
 		Angle leftAzimuth = Angle.fromDegrees(leftAzimuthDeg);
 		Angle rightAzimuth = Angle.fromDegrees(rightAzimuthDeg);
