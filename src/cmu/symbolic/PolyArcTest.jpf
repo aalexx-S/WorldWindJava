@@ -1,9 +1,13 @@
 target=cmu.symbolic.PolyArcTest
 classpath=${user.home}/Projects/WorldWindJava/worldwind.jar
 sourcepath=${user.home}/Projects/WorldWindJava/src
-symbolic.method=${target}.create(sym#sym#sym#sym#sym),${target}.setRadius(sym#sym#sym#sym#sym#sym),${target}.setAzimuths(sym#sym#sym#sym#sym#sym#sym),${target}.move(sym#sym#sym#sym#sym#sym#sym#sym)
-search.multiple_errors=true
+
+symbolic.method=${target}.create(sym#sym#sym#sym#sym#sym#sym),${target}.createLocationsList(sym#sym#sym#sym),${target}.setRadius(sym#sym#sym#sym#sym#sym#sym#sym),${target}.setAzimuths(sym#sym#sym#sym#sym#sym#sym#sym#sym),${target}.move(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym)
 symbolic.dp=z3
 symbolic.debug=true
+symbolic.min_int_locCount=0
+symbolic.max_int_locCount=500
 symbolic.arrays=true
+
+search.multiple_errors=true
 listener=gov.nasa.jpf.symbc.SymbolicListener
