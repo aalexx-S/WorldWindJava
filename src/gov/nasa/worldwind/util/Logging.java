@@ -65,7 +65,7 @@ public class Logging
      */
     public static Logger logger(String loggerName)
     {
-        return Logger.getLogger(loggerName != null ? loggerName : "", MESSAGE_BUNDLE_NAME);
+        return new Logger();
     }
 
     /**
@@ -77,16 +77,7 @@ public class Logging
      */
     public static String getMessage(String property)
     {
-        try
-        {
-            return (String) ResourceBundle.getBundle(MESSAGE_BUNDLE_NAME, Locale.getDefault()).getObject(property);
-        }
-        catch (Exception e)
-        {
-            String message = "Exception looking up message from bundle " + MESSAGE_BUNDLE_NAME;
-            logger().log(java.util.logging.Level.SEVERE, message, e);
-            return message;
-        }
+        return "";
     }
 
     /**
@@ -102,7 +93,7 @@ public class Logging
      */
     public static String getMessage(String property, String arg)
     {
-        return arg != null ? getMessage(property, (Object) arg) : getMessage(property);
+        return "";
     }
 
     /**
@@ -118,30 +109,7 @@ public class Logging
      */
     public static String getMessage(String property, Object... args)
     {
-        String message;
-
-        try
-        {
-            message = (String) ResourceBundle.getBundle(MESSAGE_BUNDLE_NAME, Locale.getDefault()).getObject(property);
-        }
-        catch (Exception e)
-        {
-            message = "Exception looking up message from bundle " + MESSAGE_BUNDLE_NAME;
-            logger().log(Level.SEVERE, message, e);
-            return message;
-        }
-
-        try
-        {
-            // TODO: This is no longer working with more than one arg in the message string, e.g., {1}
-            return args == null ? message : MessageFormat.format(message, args);
-        }
-        catch (IllegalArgumentException e)
-        {
-            message = "Message arguments do not match format string: " + property;
-            logger().log(Level.SEVERE, message, e);
-            return message;
-        }
+        return "";
     }
 
     /**
