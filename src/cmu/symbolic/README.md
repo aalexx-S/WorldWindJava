@@ -41,7 +41,7 @@ extensions = ${jpf-core},${jpf-symbc}
 
 Instructions for building WorldWind. Commands are run from within the WorldWindJava root directory.
 
-* `ant clean build`
+* `ant build`
 
 ## Run
 
