@@ -47,7 +47,7 @@ Instructions for building WorldWind. Commands are run from within the WorldWindJ
 
 ## Run
 
-How to run the symbolic execution tests (located in `src/cmu/symbolic`). Make sure that you've run the build first.
+How to run the symbolic execution tests (located in `src/cmu/symbolic` on the `symbc` branch). Make sure that you've run the build first.
 
 * `java -jar ~/projects/jpf/jpf-core/RunJPF.jar <JPFTestFile>`
 * Example: `java -jar ~/projects/jpf/jpf-core/RunJPF.jar ~/projects/WorldWindJava/src/cmu/symbolic/AngleTest.jpf`
