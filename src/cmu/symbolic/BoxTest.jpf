@@ -1,7 +1,7 @@
 target=cmu.symbolic.BoxTest
 classpath=${user.home}/Projects/WorldWindJava/worldwind.jar
 sourcepath=${user.home}/Projects/WorldWindJava/src
-symbolic.method=cmu.symbolic.BoxTest.create(sym#sym#sym#sym#sym#sym),cmu.symbolic.BoxTest.setWidths(sym#sym#sym#sym#sym#sym#sym#sym),cmu.symbolic.BoxTest.setCornerAzimuths(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym),cmu.symbolic.BoxTest.setEnableCaps(sym#sym#sym#sym#sym#sym#sym),cmu.symbolic.BoxTest.setEnableStartCap(sym#sym#sym#sym#sym#sym#sym),cmu.symbolic.BoxTest.setEnableEndCap(sym#sym#sym#sym#sym#sym#sym),cmu.symbolic.BoxTest.setEnableCenterLine(sym#sym#sym#sym#sym#sym#sym),cmu.symbolic.BoxTest.move(sym#sym#sym#sym#sym#sym#sym#sym#sym)
+symbolic.method=${target}.create(sym#sym#sym#sym#sym#sym),${target}.setWidths(sym#sym#sym#sym#sym#sym#sym#sym),${target}.setCornerAzimuths(sym#sym#sym#sym#sym#sym#sym#sym#sym#sym),${target}.setEnableCaps(sym#sym#sym#sym#sym#sym#sym),${target}.setEnableStartCap(sym#sym#sym#sym#sym#sym#sym),${target}.setEnableEndCap(sym#sym#sym#sym#sym#sym#sym),${target}.setEnableCenterLine(sym#sym#sym#sym#sym#sym#sym),${target}.move(sym#sym#sym#sym#sym#sym#sym#sym#sym)
 search.multiple_errors=true
 symbolic.dp=z3
 symbolic.debug=true
