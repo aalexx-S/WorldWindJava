@@ -18,20 +18,6 @@ public class PolyArcTest {
         return new PolyArc(locations, radius, leftAzimuth, rightAzimuth);
     }
     
-    public static List<LatLon> createLocationsList(int len, double baseLat, double baseLon, double latLonDelta) {
-        len = Math.max(len, 0);
-        List<LatLon> locations = new ArrayList<LatLon>(len);
- 
-        for (int i = 0; i < len; i++) {
-            double lat = baseLat + (i * latLonDelta);
-            double lon = baseLon + (i * latLonDelta);
-
-            locations.add(LatLon.fromDegrees(lat, lon));
-        }
-        
-        return locations;
-    }
-    
     public static void setRadius(int locCount, double baseLat, double baseLon, double latLonDelta, double radius, double leftAzimuthDeg, double rightAzimuthDeg, double newRadius) {
         PolyArc polyarc = create(locCount, baseLat, baseLon, latLonDelta, radius, leftAzimuthDeg, rightAzimuthDeg);
         
@@ -51,6 +37,21 @@ public class PolyArcTest {
         Position position = Position.fromDegrees(newLat, newLon, newElev);
         
         polyArc.move(position);
+    }
+    
+    // Helper method for creating a list of locations with various values.
+    public static List<LatLon> createLocationsList(int locCount, double baseLat, double baseLon, double latLonDelta) {
+        locCount = Math.max(locCount, 0);
+        List<LatLon> locations = new ArrayList<LatLon>(locCount);
+ 
+        for (int i = 0; i < locCount; i++) {
+            double lat = baseLat + (i * latLonDelta);
+            double lon = baseLon + (i * latLonDelta);
+
+            locations.add(LatLon.fromDegrees(lat, lon));
+        }
+        
+        return locations;
     }
     
     public static void main(String[] args) {
