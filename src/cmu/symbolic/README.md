@@ -18,6 +18,7 @@ How to install the project to run the symbolic execution tests.
 * $ `git clone https://github.com/SymbolicPathFinder/jpf-core.git`
 * $ `cd ~/jpf/jpf-symbc && git checkout 0f2f2901cd0ae9833145c38fee57be03da90a64f`
 * $ `cd ~/jpf/jpf-core && git checkout b64ab6a0c8dde218b34969b46ee526ece7ddee44`
+* Add `export LD_LIBRARY_PATH=~/projects/jpf/jpf-symbc/lib` to `~/.bashrc` (or .zshrc or whatever)
 * Add the following code in `~/.jpf/site.properties`
     
 ```
@@ -50,4 +51,11 @@ How to run the symbolic execution tests (located in `src/cmu/symbolic`). Make su
 
 * `java -jar ~/projects/jpf/jpf-core/RunJPF.jar <JPFTestFile>`
 * Example: `java -jar ~/projects/jpf/jpf-core/RunJPF.jar ~/projects/WorldWindJava/src/cmu/symbolic/AngleTest.jpf`
+
+## Develop
+
+During development, after making changes in any Java files, you can run the following to build & run the project
+
+* `ant build && java -jar ~/projects/jpf/jpf-core/RunJPF.jar <JPFTestFile>`
+
 
