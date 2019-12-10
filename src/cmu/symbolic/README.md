@@ -18,6 +18,7 @@ How to install the project to run the symbolic execution tests.
 * $ `git clone https://github.com/SymbolicPathFinder/jpf-core.git`
 * $ `cd ~/jpf/jpf-symbc && git checkout 0f2f2901cd0ae9833145c38fee57be03da90a64f`
 * $ `cd ~/jpf/jpf-core && git checkout b64ab6a0c8dde218b34969b46ee526ece7ddee44`
+* Add `export LD_LIBRARY_PATH=~/projects/jpf/jpf-symbc/lib` to `~/.bashrc` (or .zshrc or whatever)
 * Add the following code in `~/.jpf/site.properties`
     
 ```
@@ -32,7 +33,6 @@ extensions = ${jpf-core},${jpf-symbc}
 * $ `git clone https://github.com/grese/WorldWindJava.git`
 * $ `cd ~/projects/WorldWindJava && git checkout symbc`
 
-
 ### IDE Setup
 
 * Open a new Eclipse workspace.
@@ -40,16 +40,22 @@ extensions = ${jpf-core},${jpf-symbc}
 
 ## Build
 
-Instructions for building WorldWind.
+Instructions for building WorldWind. Commands are run from within the WorldWindJava root directory.
 
-* In the "package explorer", right-click on `build.xml`
-* Choose `Run As` > `Ant Build`
+* Build: `ant build`
+* Clean and build: `ant clean build`
 
 ## Run
 
-How to run the symbolic execution tests
+How to run the symbolic execution tests (located in `src/cmu/symbolic`). Make sure that you've run the build first.
 
-* The symbolic execution tests can be found in `src/cmu/symbolic`
-* Open the .jpf file that you want to run.
-* Run the "run-JPF-symbc" run configuration
+* `java -jar ~/projects/jpf/jpf-core/RunJPF.jar <JPFTestFile>`
+* Example: `java -jar ~/projects/jpf/jpf-core/RunJPF.jar ~/projects/WorldWindJava/src/cmu/symbolic/AngleTest.jpf`
+
+## Develop
+
+During development, after making changes in any Java files, you can run the following to build & run the project
+
+* `ant build && java -jar ~/projects/jpf/jpf-core/RunJPF.jar <JPFTestFile>`
+
 
