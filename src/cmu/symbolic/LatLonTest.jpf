@@ -1,0 +1,9 @@
+target=cmu.symbolic.LatLonTest
+classpath=${user.home}/Projects/WorldWindJava/worldwind.jar
+sourcepath=${user.home}/Projects/WorldWindJava/src
+cn=cmu.symbolic.LatLonTest
+symbolic.method=${cn}.interpolate(sym#sym#sym#sym#sym#sym)
+search.multiple_errors=true
+symbolic.dp=z3
+symbolic.debug=true
+listener=gov.nasa.jpf.symbc.SymbolicListener

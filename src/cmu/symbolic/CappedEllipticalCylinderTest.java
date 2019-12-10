@@ -11,8 +11,14 @@ public class CappedEllipticalCylinderTest {
     public static CappedEllipticalCylinder create(double lat, double lon, double radius, double radius2, double degree){
         LatLon latLon = LatLon.fromDegrees(lat, lon);
         Angle angle = Angle.fromDegrees(degree);
-        CappedEllipticalCylinder capped = new CappedEllipticalCylinder(latLon, radius, radius2, angle);
-        
+        CappedEllipticalCylinder capped = null;
+        try
+        {
+            capped = new CappedEllipticalCylinder(latLon, radius, radius2, angle);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error catched by CappedEllipticalCylinderTest =" + e);
+        }
+        assert capped != null;
         capped.setHighlightAttributes(new BasicAirspaceAttributes());
         return capped;
     }
